@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    background-color: #00796b;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 5px solid #000000a8;
+    background-color: white;
+}

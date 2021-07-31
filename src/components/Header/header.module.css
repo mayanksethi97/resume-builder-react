@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Staatliches&display=swap');
+.header {
+    height: 4em;
+    position: static;
+    background-color: black;
+    position: relative;
+}
+
+.header h2 {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header h2 span {
+    color: darkgoldenrod;
+}

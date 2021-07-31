@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.form-layout {
+    width: 60%;
+    background-color: white
+}
+
+.content {
+    padding: 20px;
+}
+
+.name {
+    color: rgb(88, 88, 209);
+    font-size: 40px;
+}
+
+.italic-font {
+    font-style: italic;
+}
+
+.employment-history-list li h4 {
+    line-height: 5px;
+}
+
+.employment-history-list li p {
+    line-height: 5px;
+}
+
+.button {
+    height: 5em;
+    width: 40rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #3F51B5;
+}
+
+.button h2 {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 0;
+}
