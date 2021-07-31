@@ -33,3 +33,13 @@
 .card span {
     font-family: 'Oswald', sans-serif;
 }
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+    .card img {
+        width: 80%;
+        height: 20em;
+    }
+}

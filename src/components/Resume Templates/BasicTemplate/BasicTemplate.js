@@ -122,8 +122,8 @@ function BasicTemplate(props) {
                 <br />
                 <br />
                 <br />
-                <Pdf targetRef={downloadRef} filename="code-example.pdf" x={1.5} y={.5} scale={1}>
-                    {({ toPdf }) => <button className={classes.button} onClick={toPdf}><h2>Generate Pdf</h2></button>}
+                <Pdf targetRef={downloadRef} filename="code-example.pdf" x={1.5} y={.5} scale={0.8}>
+                    {({ toPdf }) => <button className={classes.button} onClick={toPdf}><h2>Download My Resume</h2></button>}
                 </Pdf>
                 <br />
                 <br />

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Staatliches&display=swap');
 .header {
     height: 4em;
+    width: 100%;
     position: static;
     background-color: black;
     position: relative;
@@ -19,4 +20,8 @@
 
 .header h2 span {
     color: darkgoldenrod;
+}
+
+@media (max-width: 480px) {
+    .header {}
 }

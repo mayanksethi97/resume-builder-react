@@ -34,3 +34,10 @@
     border: 5px solid #000000a8;
     background-color: white;
 }
+
+@media (max-width: 480px) {
+    .container {
+        height: 0;
+        display: none;
+    }
+}
