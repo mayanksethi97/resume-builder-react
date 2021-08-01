@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import classes from "./Landing.module.css";
-import Steps from "../steps";
+import Footer from "../Footer";
 import { useHistory } from "react-router-dom"
 const sampleResume = "/assets/sample_resume.svg"
 
@@ -43,7 +43,7 @@ function Landing() {
                         <img src={sampleResume} className={classes.resume} rel="preload" />
                     </div>
                 </div>
-                <Steps />
+                <Footer />
             </div>
         </>
     )

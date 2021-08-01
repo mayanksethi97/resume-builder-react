@@ -17,3 +17,5 @@ export const INITAL_ACHIEVEMENTS = {
     description: 'Achievement Description',
     date: '20 July 20XX'
 }
+
+export const INITIAL_SKILLS = ['SKILL']

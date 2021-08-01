@@ -1,9 +1,9 @@
 import { faDownload, faFileAlt, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import classes from "./Steps.module.css";
+import classes from "./Footer.module.css";
 
 
-function Steps() {
+function Footer() {
     return (
         <>
             <div className={classes.container}>
@@ -32,4 +32,4 @@ function Steps() {
     )
 }
 
-export default Steps;
+export default Footer;

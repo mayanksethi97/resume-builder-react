@@ -1,0 +1,107 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.form-layout {
+    width: 60%;
+    background-color: white
+}
+
+.content {
+    padding: 20px;
+}
+
+.name {
+    color: rgb(88, 88, 209);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.italic-font {
+    font-style: italic;
+}
+
+.employment-history-list li h4 {
+    line-height: 5px;
+}
+
+.employment-history-list li p {
+    line-height: 5px;
+}
+
+.button {
+    height: 5em;
+    width: 40rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #3F51B5;
+}
+
+.button h2 {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 1rem;
+    }
+    .form-layout {
+        width: 90%
+    }
+    .button {
+        width: 90%
+    }
+}
+
+.heading {
+    background-color: #60ce80;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 140px;
+    align-items: center;
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.skills {
+    list-style: none
+}
+
+.skills li {
+    background-color: #56c152;
+    width: 80px;
+    display: inline-flex;
+    justify-content: center;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 5px;
+}
