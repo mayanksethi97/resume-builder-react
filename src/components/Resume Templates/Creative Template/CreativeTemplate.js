@@ -94,7 +94,7 @@ function CreativeTemplate(props) {
                             <div>
                              <img src={profileImage} className={classes['profile-pic']}/>
                             </div>
-                            <input type="file" name="profile-pic" id="profile" accept="image/*" style={{ width: 86,marginLeft: '22%'}} onChange={onImageUpload}/>
+                            <input type="file" name="profile-pic" id="profile" accept="image/*" className={classes.imagepick} onChange={onImageUpload}/>
                             </div>
                             
                            

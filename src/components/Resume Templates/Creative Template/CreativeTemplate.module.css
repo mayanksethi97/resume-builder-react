@@ -58,18 +58,6 @@ h6 {
     margin: 0;
 }
 
-@media (max-width: 480px) {
-    .container {
-        margin-top: 1rem;
-    }
-    .form-layout {
-        width: 90%
-    }
-    .button {
-        width: 90%
-    }
-}
-
 .heading {
     background-color: #60ce80;
     margin-left: -20px;
@@ -104,4 +92,31 @@ h6 {
     border-radius: 5px;
     align-items: center;
     margin: 5px;
+}
+
+.imagepick {
+    width: 85px;
+    margin-left: 22%;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 1rem;
+    }
+    .form-layout {
+        width: 90%
+    }
+    .button {
+        width: 90%
+    }
+    .profile-pic {
+        width: 90px;
+        height: 80px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .imagepick {
+        margin-left: 2%;
+    }
 }
