@@ -1,13 +1,21 @@
 /* eslint-disable default-case */
 import classes from "./CreativeTemplate.module.css";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { INITIAL_EDUCATION_HISTORY, INITIAL_EMPLOYMENT_HISTORY, INITAL_ACHIEVEMENTS, INITIAL_SKILLS } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle, faMinusCircle, faUserTie, faBriefcase, faSchool, faAward, faUserCircle, faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import Pdf from "react-to-pdf";
+import Analytics from "../../../store/AnalyticsContext";
 const profilePicPlaceHolder = "/assets/profile-pic-placeholder.png"
 
 function CreativeTemplate(props) {
+    const analyticsCtx = useContext(Analytics);
+    analyticsCtx.pageView();
+    analyticsCtx.log("page view");
+    analyticsCtx.sendEvent({
+        category: "template used",
+        action: "Creative Template Used"
+    })
     const downloadRef = React.createRef()
     const [employmentHistory, setEmploymentHistory] = useState([INITIAL_EMPLOYMENT_HISTORY]);
     const [educationHistory, setEducationHistory] = useState([INITIAL_EDUCATION_HISTORY]);
@@ -172,7 +180,13 @@ function CreativeTemplate(props) {
                 <br />
                 <br />
                 <Pdf targetRef={downloadRef} filename="code-example.pdf" x={1.5} y={.5} scale={0.8}>
-                    {({ toPdf }) => <button className={classes.button} onClick={toPdf}><h2>Download My Resume</h2></button>}
+                    {({ toPdf }) => <button className={classes.button} onClick={() => {
+                        toPdf()
+                        analyticsCtx.sendEvent({
+                            category: "template downloaded",
+                            action: "Creative Template downloaded"
+                        })
+                    }}><h2>Download My Resume</h2></button>}
                 </Pdf>
                 <br />
                 <br />

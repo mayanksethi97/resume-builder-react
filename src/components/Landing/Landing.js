@@ -3,10 +3,15 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import classes from "./Landing.module.css";
 import Footer from "../Footer";
 import { useHistory } from "react-router-dom"
+import Analytics from "../../store/AnalyticsContext";
+import { useContext } from "react";
 const sampleResume = "/assets/sample_resume.svg"
 
 
 function Landing() {
+    const analyticsCtx = useContext(Analytics);
+    analyticsCtx.pageView();
+    analyticsCtx.log("page view");
     const history = useHistory();
     function navigate(path) {
         history.push(path)
